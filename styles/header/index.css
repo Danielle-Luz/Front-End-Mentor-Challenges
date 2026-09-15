@@ -1,0 +1,22 @@
+.header {
+  align-items: center;
+  border-bottom: 1.5px solid var(--neutral-400);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.header__menu-button {
+  background-color: var(--neutral-100);
+  border: 1.5px solid var(--neutral-400);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 28px;
+}
+
+.header__menu-icon {
+  width: 70%;
+}
