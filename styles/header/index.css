@@ -7,16 +7,40 @@
 }
 
 .header__menu-button {
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  backface-visibility: hidden;
+
   background-color: var(--neutral-100);
   border: 1.5px solid var(--neutral-400);
   border-radius: 4px;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.header__menu-icon, .header__close-icon--closed {
+  background-color: var(--neutral-0);
+  position: absolute;
   height: 28px;
+  width: 30px;
 }
 
 .header__menu-icon {
-  width: 70%;
+  animation-name: menu-icon-rotate;
+}
+
+.header__close-icon--closed {
+  animation-name: menu-icon-rotate-reverse;
+  transform: rotateY(180deg);
+}
+
+@keyframes menu-icon-rotate {
+  100% {
+    transform: rotateY(180deg);
+  }
 }
