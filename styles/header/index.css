@@ -7,22 +7,27 @@
 }
 
 .header__menu-button {
-  animation-duration: 3s;
-  animation-name: menu-icon-rotate;
-  animation-fill-mode: forwards;
   align-items: center;
-  animation-iteration-count: 1;
-  backface-visibility: hidden;
   background-color: var(--neutral-100);
   cursor: pointer;
   display: flex;
   justify-content: center;
+  position: relative;
+  transform-style: preserve-3d;
   height: 28px;
   width: 30px;
 }
 
+.header__menu-button--open {
+  animation-duration: 1s;
+  animation-name: menu-icon-rotate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
 .header__menu-icon, .header__close-icon--closed {
   background-color: var(--neutral-0);
+  backface-visibility: hidden;
   border: 1.5px solid var(--neutral-400);
   border-radius: 4px;
   position: absolute;
@@ -40,10 +45,18 @@
   }
 }
 
-.header__menu-button--open {
+.header__menu-button--closed {
   animation-name: close-icon-rotate;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
+}
+
+.header__menu-button--closed .header__close-icon--closed {
+  transform: rotateY(0deg);
+}
+
+.header__menu-button--closed .header__menu-icon {
+  transform: rotateY(180deg);
 }
 
 @keyframes close-icon-rotate {
