@@ -1,13 +1,17 @@
 .menu {
+  height: 100vh;
   padding: 0 15px;
 }
 
 .header {
   align-items: center;
+  background-color: var(--neutral-100);
   border-bottom: 1.5px solid var(--neutral-400);
   display: flex;
   justify-content: space-between;
   padding: 15px;
+  position: relative;
+  z-index: 1;
 }
 
 .header__menu-button {
@@ -114,4 +118,23 @@
 
 .menu__button img {
   width: 20px;
+}
+
+.menu__nav {
+  animation-name: show-menu;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+@keyframes show-menu {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
