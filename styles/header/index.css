@@ -1,6 +1,7 @@
 .menu {
   min-height: 100vh;
   padding: 0 15px;
+  position: fixed;
 }
 
 .header {
