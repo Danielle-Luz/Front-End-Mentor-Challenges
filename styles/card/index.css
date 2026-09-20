@@ -126,7 +126,8 @@ span.card__receipt-schedule-time {
   height: 20px;
 }
 
-.card__receipt-cost {
+.card__receipt-costs {
+  border-bottom: 1px solid var(--neutral-900);
   font-family: "DM Mono", monospace;
   font-size: 13px;
   letter-spacing: 1.5px;
