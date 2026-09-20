@@ -1,5 +1,5 @@
 .menu {
-  height: 100vh;
+  min-height: 100vh;
   padding: 0 15px;
 }
 
@@ -165,5 +165,13 @@
 
   .menu__nav {
     transform: translateY(0);
+  }
+  
+  .menu__nav--open {
+    animation-name: none;
+  }
+
+  .menu__nav--hidden {
+    animation-name: none;
   }
 }

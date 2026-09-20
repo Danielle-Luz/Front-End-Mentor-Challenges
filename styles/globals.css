@@ -66,6 +66,8 @@
   box-sizing: border-box;
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -75,11 +77,9 @@ a {
 
 body {
   background-color: var(--neutral-100);
-  margin: 0;
 }
 
 button {
   background-color: transparent;
   border: none;
-  padding: 0;
 }
