@@ -14,7 +14,7 @@
   width: 100%;
 }
 
-.card__receipt-title p, .card__receipt-identifier p {
+.card__receipt-title p, .card__receipt-identifier p, .card__receipt--title {
   color: var(--neutral-600);
   font-family: "DM Mono", monospace;
   font-size: 11.5px;
@@ -31,7 +31,6 @@
 }
 
 .card__receipt-header {
-  border-bottom: 2px dotted var(--neutral-400);
   display: flex;
   justify-content: space-between;
   padding: 12px 0;
@@ -48,4 +47,53 @@
   flex-direction: column;
   gap: 5px;
   text-align: end;
+}
+
+.card__receipt-dates {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px dotted var(--neutral-400);
+  border-top: 2px dotted var(--neutral-400);
+}
+
+.card__receipt--schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  padding: 18px;
+}
+
+.card__receipt--title, .card__receipt--schedule-date, .card__receipt--schedule-time {
+  text-align: center;
+}
+
+.card__receipt--title {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.card__receipt--schedule-date {
+  font-family: "Fraunces", sans-serif;
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+.card__receipt--schedule-time-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+
+.card__receipt--schedule-time {
+  align-items: center;
+  color: var(--neutral-600);
+  display: flex;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+span.card__receipt--schedule-time {
+  display: block;
+  height: 20px;
 }
