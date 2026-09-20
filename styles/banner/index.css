@@ -71,12 +71,14 @@ span.banner__booking-status-text {
   color: var(--neutral-400);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1030px) {
   .banner {
     align-items: center;
     flex-direction: row;
   }
+}
 
+@media (min-width: 800px) {
   .banner__presentation {
     margin-right: auto;
   }
