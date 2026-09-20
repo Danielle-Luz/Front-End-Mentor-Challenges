@@ -126,6 +126,7 @@
   display: none;
   min-height: calc(100vh - 73px);
   transform: translateY(-100%);
+  padding: 15px 0;
   z-index: -1;
 }
 
@@ -160,12 +161,20 @@
 }
 
 @media (min-width: 800px) {
+  .menu {
+    border-right: 1.5px solid var(--neutral-400);
+    max-height: 100vh;
+    max-width: 300px;
+    width: 100%;
+  }
+
   .header__menu-button {
     display: none;
   }
 
   .menu__nav {
     transform: translateY(0);
+    display: block;
   }
   
   .menu__nav--open {

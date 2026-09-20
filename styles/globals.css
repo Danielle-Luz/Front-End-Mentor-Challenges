@@ -76,15 +76,23 @@ a {
   text-decoration: none;
 }
 
-body {
-  background-color: var(--neutral-100);
-}
-
 button {
   background-color: transparent;
   border: none;
 }
 
+.content-wrapper {
+  background-color: var(--neutral-100);
+}
+
 .content {
   padding: 20px;
+}
+
+@media (min-width: 800px) {
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
 }
