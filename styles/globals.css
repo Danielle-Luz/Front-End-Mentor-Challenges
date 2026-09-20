@@ -64,6 +64,7 @@
 
 * {
   box-sizing: border-box;
+  color: var( --neutral-900);
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
   margin: 0;
@@ -75,11 +76,24 @@ a {
   text-decoration: none;
 }
 
-body {
-  background-color: var(--neutral-100);
-}
-
 button {
   background-color: transparent;
   border: none;
+}
+
+.content-wrapper {
+  background-color: var(--neutral-100);
+}
+
+.content {
+  padding: 20px;
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
 }

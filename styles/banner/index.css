@@ -1,0 +1,90 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.banner__presentation {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.banner__booking-status {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.banner__booking-status-text {
+  color: var(--neutral-600);
+  font-family: "DM Mono", monospace;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+span.banner__booking-status-text {
+  display: block;
+  height: 20px;
+}
+
+.banner__title, .banner__title span {
+  font-family: "Fraunces", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.banner__title span {
+  color: var(--terracotta-600);
+  font-style: italic;
+}
+
+.banner__buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.banner__button {
+  border-radius: 20px;
+  border: 1.5px solid var(--neutral-400);
+  cursor: pointer;
+  font-weight: 600;
+  height: fit-content;
+  padding: 8px;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+.banner__button-filled:hover {
+  background-color: var(--neutral-800);
+}
+
+.banner__button-outline:hover {
+  background-color: var(--neutral-200);
+}
+
+.banner__button-filled {
+  background-color: var( --neutral-900);
+  color: var(--neutral-400);
+}
+
+@media (min-width: 1030px) {
+  .banner {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 800px) {
+  .banner__presentation {
+    margin-right: auto;
+  }
+
+  .banner__button {
+    padding: 8px 15px;
+    width: fit-content;
+  }
+}

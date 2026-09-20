@@ -6,7 +6,7 @@ function showCloseIcon () {
   if(headerButton.classList.contains("header__menu-button--open")) {
     headerButton.classList.remove("header__menu-button--open");
     headerButton.classList.add("header__menu-button--closed");
-    
+
     menu.classList.add("menu__nav--hidden");
     menu.classList.remove("menu__nav--open");
   } else {
@@ -14,6 +14,7 @@ function showCloseIcon () {
     headerButton.classList.remove("header__menu-button--closed");
 
     menu.classList.add("menu__nav--open");
+    menu.classList.remove("menu__nav--initial");
     menu.classList.remove("menu__nav--hidden");
   }
 }
