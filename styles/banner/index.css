@@ -1,17 +1,45 @@
 .banner {
-
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .banner__presentation {
-
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .banner__booking-status {
-
+  align-items: center;
+  display: flex;
+  gap: 8px;
 }
 
-.banner__title {
+.banner__booking-status-text {
+  color: var(--neutral-600);
+  font-family: "DM Mono", monospace;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-transform: uppercase;
+}
 
+span.banner__booking-status-text {
+  display: block;
+  height: 20px;
+}
+
+.banner__title, .banner__title span {
+  font-family: "Fraunces", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.banner__title span {
+  color: var(--terracotta-600);
+  font-style: italic;
 }
 
 .banner__buttons {
@@ -23,5 +51,5 @@
 }
 
 .banner__button-filled {
-  
+
 }

@@ -1,7 +1,6 @@
 .menu {
-  min-height: 100vh;
   padding: 0 15px;
-  position: fixed;
+  position: sticky;
 }
 
 .header {
@@ -124,14 +123,15 @@
 .menu__nav {
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  height: 100%;
-  position: relative;
+  display: none;
+  min-height: calc(100vh - 73px);
   transform: translateY(-100%);
   z-index: -1;
 }
 
 .menu__nav--open {
   animation-name: show-menu;
+  display: block;
 }
 
 

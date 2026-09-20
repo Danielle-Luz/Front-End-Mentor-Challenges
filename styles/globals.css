@@ -64,6 +64,7 @@
 
 * {
   box-sizing: border-box;
+  color: var( --neutral-900);
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
   margin: 0;
@@ -82,4 +83,8 @@ body {
 button {
   background-color: transparent;
   border: none;
+}
+
+.content {
+  padding: 20px;
 }
