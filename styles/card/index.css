@@ -126,9 +126,70 @@ span.card__receipt-schedule-time {
   height: 20px;
 }
 
+.card__receipt-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 0 8px 0;
+}
+
 .card__receipt-costs {
   border-bottom: 1px solid var(--neutral-900);
   font-family: "DM Mono", monospace;
   font-size: 13px;
   letter-spacing: 1.5px;
+}
+
+.card__receipt-values {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__receipt-total-title {
+  color: var(--neutral-600);
+  font-family: "DM Mono", monospace;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.card__receipt-total {
+  font-family: "Fraunces", sans-serif;
+  font-size: 20px;
+}
+
+.card__receipt-footer-info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__receipt-footer-badges {
+  display: flex;
+  list-style: none;
+}
+
+.card__receipt-footer-badges li {
+  align-items: center;
+  color: var(--neutral-600);
+  display: flex;
+  font-family: "DM Mono", monospace;
+  font-size: 11.5px;
+  letter-spacing: 1.5px;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.card__receipt-footer-badges li::after {
+  content: ".";
+  display: block;
+  height: 20px;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.card__receipt-footer-badges li:last-child::after {
+  display: none;
 }
