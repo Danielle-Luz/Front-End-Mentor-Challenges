@@ -7,25 +7,27 @@
 .card {
   background-color: var(--neutral-0);
   border-radius: 10px;
-  -webkit-box-shadow: 3px 6px 14px 5px var(--neutral-400); 
+  -webkit-box-shadow: 3px 6px 14px 5px var(--neutral-400);
   box-shadow: 3px 6px 14px 5px var(--neutral-400);
-  height: 300px;
+  height: fit-content;
   padding: 10px 20px;
   width: 100%;
 }
 
-.card__receipt-title p, .card__receipt-identifier p, .card__receipt--title {
+.card__receipt-title-header p,
+.card__receipt-identifier p,
+.card__receipt-title {
   color: var(--neutral-600);
   font-family: "DM Mono", monospace;
   font-size: 11.5px;
   letter-spacing: 1.5px;
 }
 
-.card__receipt-title p {
+.card__receipt-title-header p {
   text-transform: uppercase;
 }
 
-.card__receipt-title h2 {
+.card__receipt-title-header h2 {
   font-family: "Fraunces", sans-serif;
   font-size: 20px;
 }
@@ -36,7 +38,7 @@
   padding: 12px 0;
 }
 
-.card__receipt-title {
+.card__receipt-title-header {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -56,7 +58,7 @@
   border-top: 2px dotted var(--neutral-400);
 }
 
-.card__receipt--schedule {
+.card__receipt-schedule {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -64,28 +66,30 @@
   padding: 18px;
 }
 
-.card__receipt--title, .card__receipt--schedule-date, .card__receipt--schedule-time {
+.card__receipt-title,
+.card__receipt-schedule-date,
+.card__receipt-schedule-time {
   text-align: center;
 }
 
-.card__receipt--title {
+.card__receipt-title {
   text-transform: uppercase;
   font-weight: 400;
 }
 
-.card__receipt--schedule-date {
+.card__receipt-schedule-date {
   font-family: "Fraunces", sans-serif;
   font-size: 25px;
   margin-top: 5px;
 }
 
-.card__receipt--schedule-time-wrapper {
+.card__receipt-schedule-time-wrapper {
   align-items: center;
   display: flex;
   gap: 5px;
 }
 
-.card__receipt--schedule-time {
+.card__receipt-schedule-time {
   align-items: center;
   color: var(--neutral-600);
   display: flex;
@@ -93,7 +97,37 @@
   font-weight: 500;
 }
 
-span.card__receipt--schedule-time {
+span.card__receipt-schedule-time {
   display: block;
   height: 20px;
+}
+
+.card__receipt-costs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding: 10px 0 15px 0;
+}
+
+.card__receipt-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__receipt-line {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+
+.card__receipt-line span {
+  display: block;
+  height: 20px;
+}
+
+.card__receipt-cost {
+  font-family: "DM Mono", monospace;
+  font-size: 13px;
+  letter-spacing: 1.5px;
 }
