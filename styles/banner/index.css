@@ -43,13 +43,19 @@ span.banner__booking-status-text {
 }
 
 .banner__buttons {
-
+  display: flex;
+  gap: 15px;
 }
 
-.banner__button-outline {
-
+.banner__button {
+  border-radius: 20px;
+  border: 1.5px solid var(--neutral-400);
+  font-weight: 600;
+  padding: 8px;
+  width: 100%;
 }
 
 .banner__button-filled {
-
+  background-color: var( --neutral-900);
+  color: var(--neutral-400);
 }
