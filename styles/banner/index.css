@@ -52,6 +52,7 @@ span.banner__booking-status-text {
   border: 1.5px solid var(--neutral-400);
   cursor: pointer;
   font-weight: 600;
+  height: fit-content;
   padding: 8px;
   transition: all 0.3s ease-in-out;
   width: 100%;
@@ -68,4 +69,20 @@ span.banner__booking-status-text {
 .banner__button-filled {
   background-color: var( --neutral-900);
   color: var(--neutral-400);
+}
+
+@media (min-width: 800px) {
+  .banner {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .banner__presentation {
+    margin-right: auto;
+  }
+
+  .banner__button {
+    padding: 8px 15px;
+    width: fit-content;
+  }
 }
