@@ -121,20 +121,49 @@
 }
 
 .menu__nav {
-  animation-name: show-menu;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   height: 100%;
   position: relative;
+  transform: translateY(-100%);
   z-index: -1;
 }
+
+.menu__nav--open {
+  animation-name: show-menu;
+}
+
 
 @keyframes show-menu {
   0% {
     transform: translateY(-100%);
   }
+  
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.menu__nav--hidden {
+  animation-name: hide-menu;
+}
+
+@keyframes hide-menu {
+  0% {
+    transform: translateY(0);
+  }
 
   100% {
+    transform: translateY(-100%);
+  }
+}
+
+@media (min-width: 800px) {
+  .header__menu-button {
+    display: none;
+  }
+
+  .menu__nav {
     transform: translateY(0);
   }
 }
