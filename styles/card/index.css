@@ -1,3 +1,9 @@
+.card-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .card-section {
   align-items: center;
   display: flex;
@@ -13,7 +19,13 @@
   max-width: 350px;
   min-height: 452px;
   padding: 10px 20px;
+  transition: all 0.5s ease-in-out;
   width: 100%;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  z-index: 1;
 }
 
 .card__note {
@@ -23,7 +35,7 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  transform: rotate(5deg);
+  transform: rotate(3deg);
   padding-top: 22px;
   -webkit-box-shadow: 5px 5px 24px 5px rgba(224,121,62,0.49); 
   z-index: 1;
@@ -93,14 +105,15 @@
 }
 
 .card__receipt {
-  box-shadow: 3px 6px 14px 5px var(--neutral-400);
+  box-shadow: 1px 6px 24px 5px rgba(89,75,59,0.15);
   transform: rotate(-5deg);
-  -webkit-box-shadow: 3px 6px 14px 5px var(--neutral-400);
+  -webkit-box-shadow: 1px 6px 24px 5px rgba(89,75,59,0.15); 
 }
 
 .card__receipt-title-header p,
 .card__receipt-identifier p,
-.card__receipt-title {
+.card__receipt-title,
+.card__hover-button {
   color: var(--neutral-600);
   font-family: "DM Mono", monospace;
   font-size: 11.5px;
@@ -276,6 +289,21 @@ span.card__receipt-schedule-time {
 
 .card__receipt-footer-badges li:last-child::after {
   display: none;
+}
+
+.card__hover-button {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.card__hover-button::before {
+  content: url("./../../assets/images/icon-sparkle.svg");
+}
+
+.card__hover-button::after {
+  content: url("./../../assets/images/icon-sparkle.svg");
 }
 
 @media (min-width: 1000px) {
