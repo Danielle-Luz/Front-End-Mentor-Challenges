@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./styles/globals.css" />
   <link rel="stylesheet" href="./styles/header/index.css" />
   <link rel="stylesheet" href="./styles/banner/index.css" />
+  <link rel="stylesheet" href="./styles/card/index.css" />
 </head>
 <body class="content-wrapper">
   <aside class="menu">
@@ -64,6 +65,107 @@
       <div>
       </div>
     </section>
+    <div class="card-section-wrapper">
+      <section class="card-section">
+        <article class="card card__note">
+          <div>
+            <header class="card__note-header">
+              <p class="card__note-welcome">Welcome card</p>
+              <img class="card__note-icon" src="./assets/images/icon-sun.svg" alt="Drawing of a yellow sun" />
+            </header>
+            <main class="card__note-main">
+              <section class="card__note-titles">
+                <h1 class="card__note-title-1">A note from your host,</h1>
+                <h2 class="card__note-title-2">Margaux.</h2>
+              </section>
+              <p class="card__note-content">
+                We're so glad you are coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
+              </p>
+            </main>
+          </div>
+          <footer class="card__note-footer">
+            <p class="card__note-footer-text-1">Room</p>
+            <p class="card__note-footer-text-2">La Guarrigue</p>
+          </footer>
+        </article>
+        <article class="card card__receipt">
+          <header class="card__receipt-header">
+            <div class="card__receipt-title-header">
+              <p>Receipt</p>
+              <h2>Your stay</h2>
+            </div>
+            <div class="card__receipt-identifier">
+              <p>Nº MS-2026</p>
+              <p>0421-AH</p>
+            </div>
+          </header>
+          <main>
+            <section class="card__receipt-dates">
+              <article class="card__receipt-schedule">
+                <h2 class="card__receipt-title">Check in</h2>
+                <time class="card__receipt-schedule-date" datetime="04-25">25 Apr</time>
+    
+                <div class="card__receipt-schedule-time-wrapper">
+                  <time class="card__receipt-schedule-time" datetime="04-25T15:00">Saturday</time> 
+                  <span class="card__receipt-schedule-time">.</span>
+                  <time class="card__receipt-schedule-time">15:00</time>
+                </div>
+              </article>
+              <article class="card__receipt-schedule">
+                <h2 class="card__receipt-title">Check out</h2>
+                <time class="card__receipt-schedule-date" datetime="04-29">29 Apr</time>
+                <div class="card__receipt-schedule-time-wrapper">
+                  <time class="card__receipt-schedule-time" datetime="04-29T11:00">Wednesday</time> 
+                  <span class="card__receipt-schedule-time">.</span>
+                  <time class="card__receipt-schedule-time">11:00</time>
+                </div>
+              </article>
+            </section>
+            <ul class="card__receipt-costs">
+              <li class="card__receipt-item">
+                <div class="card__receipt-line">
+                  <p>Room</p>
+                  <span>.</span>
+                  <p>La Garrigue</p>
+                  <span>×</span>
+                  <p>4 nights</p>
+                </div>
+                <p class="card__receipt-cost">€ 620.00</p>
+              </li>
+              <li class="card__receipt-item">
+                <div class="card__receipt-line">
+                  <p>Breakfast</p>
+                  <span>×</span>
+                  <p>2 guests</p>
+                </div>
+                <p class="card__receipt-cost">€ 96.00</p>
+              </li>
+              <li class="card__receipt-item">
+                <div class="card__receipt-line">
+                  <p>Tourist tax</p>
+                </div>
+                <p class="card__receipt-cost">€ 14.40</p>
+              </li>
+            </ul>
+            <footer class="card__receipt-footer">
+              <section class="card__receipt-values">
+                <h2 class="card__receipt-total-title">Total paid</h2>
+                <p class="card__receipt-total">€ 730.40</p>
+              </section>
+              <div class="card__receipt-footer-info">
+                <ul class="card__receipt-footer-badges">
+                  <li>Paid</li>
+                  <li>Wise</li>
+                  <li>GBP</li>
+                </ul>
+                <img src="./assets/images/icon-barcode.svg" alt="Barcode" />
+              </div>
+            </footer>
+          </main>
+        </article>
+      </section>
+      <button class="card__hover-button">Hover to fan</button>
+    </div>
   </main>
 </body>
 <script src="./scripts/header.js"></script>
