@@ -6,9 +6,13 @@
 
 .information {
   border-radius: 20px;
-  background-color: var(--neutral-0);
+  background-color: var(--neutral-50);
   border: 1px solid var(--neutral-400);
-  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 230px;
+  max-width: 340px;
   padding: 20px;
 }
 
@@ -48,5 +52,34 @@
 
 .information__header h2:nth-of-type(1),
 .information__header p:nth-of-type(1) {
-  color: var(--terracotta-600);
+  color: var(--terracotta-500);
+}
+
+.information__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.information__content div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.information__content h2 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 20px;
+}
+
+.information__content div p {
+  color: var(--neutral-600);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.information__content p {
+  color: var(--neutral-600);
+  font-size: 13px;
+  font-weight: 500;
 }
