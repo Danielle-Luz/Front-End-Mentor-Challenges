@@ -39,6 +39,30 @@
   color: var(--terracotta-500);
 }
 
+.information:nth-of-type(2) .information__header img {
+  background-color: var(--blue-500);
+  border-radius: 8px;
+  padding: 5px 6px;
+}
+
+
+.information:nth-of-type(2) .information__header h2,
+.information:nth-of-type(2) .information__header p {
+  color: var(--blue-500);
+}
+
+.information:nth-of-type(3) .information__header img {
+  background-color: var(--rose-500);
+  border-radius: 8px;
+  padding: 5px 6px;
+}
+
+
+.information:nth-of-type(3) .information__header h2,
+.information:nth-of-type(3) .information__header p {
+  color: var(--rose-500);
+}
+
 .information__header {
   display: flex;
   justify-content: space-between;
