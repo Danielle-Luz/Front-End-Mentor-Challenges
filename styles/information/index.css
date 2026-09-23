@@ -27,28 +27,16 @@
   width: 35px;
 }
 
-.information__header:nth-of-type(1n) img {
-  background-color: var(--terracotta-600);
+.information:nth-of-type(1) .information__header img {
+  background-color: var(--terracotta-500);
   border-radius: 8px;
   padding: 5px 6px;
 }
 
 
-.information__header:nth-of-type(1n) h2,
-.information__header:nth-of-type(1n) p {
+.information:nth-of-type(1) .information__header h2,
+.information:nth-of-type(1) .information__header p {
   color: var(--terracotta-500);
-}
-
-.information__header:nth-of-type(2n) img {
-  background-color: var(--blue-500);
-  border-radius: 8px;
-  padding: 5px 6px;
-}
-
-
-.information__header:nth-of-type(2n) h2,
-.information__header:nth-of-type(2n) p {
-  color: var(--blue-500);
 }
 
 .information__header {
