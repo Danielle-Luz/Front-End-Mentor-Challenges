@@ -160,7 +160,7 @@
   flex-direction: column;
   gap: 5px;
   justify-content: center;
-  padding: 18px;
+  padding: 10px;
 }
 
 .card__receipt-title,
@@ -176,7 +176,7 @@
 
 .card__receipt-schedule-date {
   font-family: "Fraunces", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   margin-top: 5px;
 }
 
@@ -190,7 +190,7 @@
   align-items: center;
   color: var(--neutral-600);
   display: flex;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 500;
 }
 
@@ -206,6 +206,10 @@ span.card__receipt-schedule-time {
   gap: 10px;
   list-style: none;
   padding: 10px 0 15px 0;
+}
+
+.card__receipt-costs p {
+  font-size: 10px;
 }
 
 .card__receipt-item {
@@ -304,6 +308,24 @@ span.card__receipt-schedule-time {
 
 .card__hover-button::after {
   content: url("./../../assets/images/icon-sparkle.svg");
+}
+
+@media (min-width: 405px) {
+  .card__receipt-costs p {
+    font-size: 13px;
+  }
+
+  .card__receipt-schedule-date {
+    font-size: 30px;
+  }
+
+  .card__receipt-schedule-time {
+    font-size: 12px;
+  }
+
+  .card__receipt-schedule {
+    padding: 18px;
+  }
 }
 
 @media (min-width: 1000px) {
