@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  min-height: 300px;
 }
 
 .menu__footer-card {
@@ -11,6 +12,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  max-width: 300px;
   overflow: hidden;
   padding: 10px 15px;
   position: relative;
@@ -40,4 +42,28 @@
   position: absolute;
   right: -10px;
   top: -30px;
+}
+
+.menu__footer-description {
+  border-top: 1.5px solid var(--neutral-400);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 0;
+}
+
+.menu__footer-description p {
+  color: var(--neutral-600);
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 800px) {
+  .menu__footer-card {
+    max-width: none;
+    width: 100%;
+  }
 }

@@ -2,7 +2,7 @@
   padding: 0 15px;
   top: 0;
   max-height: 100vh;
-  position: sticky;
+  position: relative;
   width: 100%;
   z-index: 2;
 }
@@ -14,7 +14,8 @@
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 1;
 }
 
@@ -132,9 +133,11 @@
   flex-direction: column;
   left: 0;
   justify-content: space-between;
+  min-height: 100vh;
   overflow: hidden;
   transform: translateY(-100%);
   padding: 15px;
+  position: absolute;
   z-index: -1;
   width: 100%;
 }
@@ -146,8 +149,6 @@
 .menu__nav--open {
   animation-name: show-menu;
   display: flex;
-  height: 100vh;
-  position: fixed;
 }
 
 
@@ -180,7 +181,7 @@
 @media (min-width: 800px) {
   .menu {
     border-right: 1.5px solid var(--neutral-400);
-    max-width: 300px;
+    max-width: 280px;
   }
 
   .header__menu-button {
@@ -189,8 +190,7 @@
 
   .menu__nav {
     transform: translateY(0);
-    display: block;
-    padding: 15px 0;
+    display: flex;
   }
   
   .menu__nav--open {
