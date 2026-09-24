@@ -1,8 +1,8 @@
 .menu {
-  padding: 0 15px;
-  top: 0;
   max-height: 100vh;
-  position: relative;
+  padding: 0 15px;
+  position: sticky;
+  top: 0;
   width: 100%;
   z-index: 2;
 }
