@@ -128,7 +128,10 @@
   animation-duration: 1s;
   animation-fill-mode: forwards;
   background-color: var(--neutral-100);
+  display: flex;
+  flex-direction: column;
   left: 0;
+  justify-content: space-between;
   overflow: hidden;
   transform: translateY(-100%);
   padding: 15px;
@@ -142,7 +145,7 @@
 
 .menu__nav--open {
   animation-name: show-menu;
-  display: block;
+  display: flex;
   height: 100vh;
   position: fixed;
 }
