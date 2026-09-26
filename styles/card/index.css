@@ -110,6 +110,28 @@
   -webkit-box-shadow: 1px 6px 24px 5px rgba(89,75,59,0.15); 
 }
 
+@media print {
+  :not(.card__receipt *) {
+    display: none !important;
+  }
+
+  .card__receipt, *:has(.card__receipt) {
+    display: block !important;
+  }
+
+  *:has(.card__receipt) {
+    padding: 0;
+  }
+
+  .card__receipt {
+    max-width: none;
+    min-height: 100vh;
+    transform: none;
+    width: 100%;
+  }
+}
+
+
 .card__receipt-title-header p,
 .card__receipt-identifier p,
 .card__receipt-title,
