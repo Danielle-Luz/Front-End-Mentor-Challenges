@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maison Soleil</title>
+  <link rel="icon" href="./assets/images/favicon-32x32.png" />
   <link rel="stylesheet" href="./styles/globals.css" />
   <link rel="stylesheet" href="./styles/header/index.css" />
   <link rel="stylesheet" href="./styles/banner/index.css" />
   <link rel="stylesheet" href="./styles/card/index.css" />
   <link rel="stylesheet" href="./styles/information/index.css" />
   <link rel="stylesheet" href="./styles/menu-footer/index.css" />
+  <script src="./scripts/header.js" async></script>
+  <script src="./scripts/print-receipt.js" async></script>
 </head>
 <body class="content-wrapper">
   <aside class="menu">
@@ -74,8 +77,8 @@
         <h1 class="banner__title">Bienvenue, <span>Lucia.</span></h1>
       </div>
       <div class="banner__buttons">
-        <button class="banner__button banner__button-outline">Print receipt</button>
-        <button class="banner__button banner__button-filled">Add to calendar</button>
+        <button id="print-receipt-button" class="banner__button banner__button-outline">Print receipt</button>
+        <a href="https://calget.com/v9qtpumd" target="_blank" class="banner__button banner__button-filled">Add to calendar</a>
       </div>
       <div>
       </div>
@@ -249,5 +252,4 @@
     </section>
   </main>
 </body>
-<script src="./scripts/header.js"></script>
 </html>
