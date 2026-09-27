@@ -2,124 +2,255 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
-  <title>Frontend Mentor | Hotel booking confirmation page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Soleil</title>
+  <link rel="icon" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./styles/globals.css" />
+  <link rel="stylesheet" href="./styles/header/index.css" />
+  <link rel="stylesheet" href="./styles/banner/index.css" />
+  <link rel="stylesheet" href="./styles/card/index.css" />
+  <link rel="stylesheet" href="./styles/information/index.css" />
+  <link rel="stylesheet" href="./styles/menu-footer/index.css" />
+  <script src="./scripts/header.js" async></script>
+  <script src="./scripts/print-receipt.js" async></script>
+  <script src="./scripts/copy-password.js" async></script>
 </head>
-<body>
-
-  <!-- Sidebar starts -->
-
-  Maison Soleil
-
-  <!-- Guest navigation -->
-  Your stay
-  1
-  The house
-  Around town
-  Breakfast
-  Messages
-
-  <!-- Local weather -->
-  Today in Cassis
-  27°
-  Sunny · light breeze
-
-  Est. 1987
-  Maison Soleil · 12 Rue des Oliviers · Cassis
-  © 2026 Maison Soleil
-
-  <!-- Sidebar ends -->
-
-  <!-- Main content starts -->
-
-  Booking · Confirmed
-  Bienvenue, Lucia.
-
-  Print receipt
-  Add to calendar
-
-  <!-- Booking cards start -->
-
-  <!-- Receipt card -->
-  Receipt
-  № MS-2026
-  0421-AH
-
-  Your stay
-
-  Check in
-  25 Apr
-  Saturday · 15:00
-
-  Check out
-  29 Apr
-  Wednesday · 11:00
-
-  Room · La Garrigue · 4 nights
-  € 620.00
-  Breakfast · 2 guests
-  € 96.00
-  Tourist tax
-  € 14.40
-
-  Total paid
-  € 730.40
-
-  Paid · Wise · GBP
-  <!-- Barcode image -->
-
-  <!-- Note from host card -->
-  Welcome
-  A note from your host, Margaux.
-  We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
-  Room
-  La Garrigue
-
-  <!-- Booking cards end -->
-
-  <!-- Guest info row starts -->
-
-  <!-- Arrival -->
-  Arrival
-  01
-  Check-in from 15:00
-  Sat, 25 April
-  Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
-
-  <!-- Wifi -->
-  Wifi
-  02
-  Le Soleil · Guest
-  Password below
-  Network
-  Le Soleil · Guest
-  Password
-  soleil-2026
-  Copy
-
-  <!-- Breakfast -->
-  Breakfast
-  03
-  Served 8 - 10:30
-  On the terrace
-  Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
-
-  <!-- Guest info row ends -->
-
-  <!-- Main content ends -->
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+<body class="content-wrapper">
+  <aside class="menu">
+    <header class="header">
+      <img src="./assets/images/logo.svg" alt="Maison Soleil logo, containing the name of the company and the icon of a yellow sun" />
+      <button class="header__menu-button" aria-label="Open menu">
+        <img class="header__close-icon--closed" src="./assets/images/icon-close.svg" alt="Close menu icon, an X" />
+        <img class="header__menu-icon" src="./assets/images/icon-menu.svg" alt="Menu icon, three horizontal lines" />
+      </button>
+    </header>
+    <nav class="menu__nav menu__nav--initial" aria-label="Menu navigation">
+      <ul class="menu__list">
+        <li class="menu__button">
+          <img src="./assets/images/icon-bed.svg" alt="" />
+          <a href="#stay">Your stay</a>
+          <span class="menu__badge">1</span>
+        </li>
+        <li class="menu__button">
+          <img src="./assets/images/icon-house.svg" alt="" />
+          <a href="#house">The house</a>
+          <span class="menu__badge">2</span>
+        </li>
+        <li class="menu__button">
+          <img src="./assets/images/icon-pin.svg" alt="" />
+          <a href="#town">Around town</a>
+          <span class="menu__badge">3</span>
+        </li>
+        <li class="menu__button">
+          <img src="./assets/images/icon-breakfast-outline.svg" alt="" />
+          <a href="#breakfast">Breakfast</a>
+          <span class="menu__badge">4</span>
+        </li>
+        <li class="menu__button">
+          <img src="./assets/images/icon-mail.svg" alt="" />
+          <a href="#message">Messages</a>
+          <span class="menu__badge">5</span>
+        </li>
+      </ul>
+      <footer class="menu__footer">
+        <article class="menu__footer-card">
+          <h2 class="menu__footer-card-title">Today in Cassis</h2>
+          <p class="menu__footer-card-degree">27º</p>
+          <p class="menu__footer-card-text">Sunny · light breeze</p>
+          <img class="menu__footer-card-img" src="./assets/images/icon-weather.svg" alt="Sun esfere" />
+        </article>
+        <article class="menu__footer-description">
+          <p>Est. 1987</p>
+          <p>Maison Soleil · 12 Rue des Oliviers · Cassis</p>
+          <p>© 2026 Maison Soleil</p>
+        </article>
+      </footer>
+    </nav>
+  </aside>
+  <main class="content">
+    <section class="banner">
+      <div class="banner__presentation">
+        <div class="banner__booking-status">
+          <p class="banner__booking-status-text">Booking</p>
+          <span class="banner__booking-status-text">.</span>
+          <p class="banner__booking-status-text">Confirmed</p>
+        </div>
+        <h1 class="banner__title">Bienvenue, <span>Lucia.</span></h1>
+      </div>
+      <div class="banner__buttons">
+        <button id="print-receipt-button" class="banner__button banner__button-outline">Print receipt</button>
+        <a href="https://calget.com/v9qtpumd" target="_blank" class="banner__button banner__button-filled">Add to calendar</a>
+      </div>
+      <div>
+      </div>
+    </section>
+    <div class="card-section-wrapper">
+      <section class="card-section">
+        <article class="card card__note">
+          <div>
+            <header class="card__note-header">
+              <p class="card__note-welcome">Welcome card</p>
+              <img class="card__note-icon" src="./assets/images/icon-sun.svg" alt="Drawing of a yellow sun" />
+            </header>
+            <main class="card__note-main">
+              <section class="card__note-titles">
+                <h1 class="card__note-title-1">A note from your host,</h1>
+                <h2 class="card__note-title-2">Margaux.</h2>
+              </section>
+              <p class="card__note-content">
+                We're so glad you are coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
+              </p>
+            </main>
+          </div>
+          <footer class="card__note-footer">
+            <p class="card__note-footer-text-1">Room</p>
+            <p class="card__note-footer-text-2">La Guarrigue</p>
+          </footer>
+        </article>
+        <article class="card card__receipt">
+          <header class="card__receipt-header">
+            <div class="card__receipt-title-header">
+              <p>Receipt</p>
+              <h2>Your stay</h2>
+            </div>
+            <div class="card__receipt-identifier">
+              <p>Nº MS-2026</p>
+              <p>0421-AH</p>
+            </div>
+          </header>
+          <main>
+            <section class="card__receipt-dates">
+              <article class="card__receipt-schedule">
+                <h2 class="card__receipt-title">Check in</h2>
+                <time class="card__receipt-schedule-date" datetime="04-25">25 Apr</time>
+    
+                <div class="card__receipt-schedule-time-wrapper">
+                  <time class="card__receipt-schedule-time" datetime="04-25T15:00">Saturday</time> 
+                  <span class="card__receipt-schedule-time">.</span>
+                  <time class="card__receipt-schedule-time">15:00</time>
+                </div>
+              </article>
+              <article class="card__receipt-schedule">
+                <h2 class="card__receipt-title">Check out</h2>
+                <time class="card__receipt-schedule-date" datetime="04-29">29 Apr</time>
+                <div class="card__receipt-schedule-time-wrapper">
+                  <time class="card__receipt-schedule-time" datetime="04-29T11:00">Wednesday</time> 
+                  <span class="card__receipt-schedule-time">.</span>
+                  <time class="card__receipt-schedule-time">11:00</time>
+                </div>
+              </article>
+            </section>
+            <ul class="card__receipt-costs">
+              <li class="card__receipt-item">
+                <div class="card__receipt-line">
+                  <p>Room</p>
+                  <span>.</span>
+                  <p>La Garrigue</p>
+                  <span>×</span>
+                  <p>4 nights</p>
+                </div>
+                <p class="card__receipt-cost">€ 620.00</p>
+              </li>
+              <li class="card__receipt-item">
+                <div class="card__receipt-line">
+                  <p>Breakfast</p>
+                  <span>×</span>
+                  <p>2 guests</p>
+                </div>
+                <p class="card__receipt-cost">€ 96.00</p>
+              </li>
+              <li class="card__receipt-item">
+                <div class="card__receipt-line">
+                  <p>Tourist tax</p>
+                </div>
+                <p class="card__receipt-cost">€ 14.40</p>
+              </li>
+            </ul>
+            <footer class="card__receipt-footer">
+              <section class="card__receipt-values">
+                <h2 class="card__receipt-total-title">Total paid</h2>
+                <p class="card__receipt-total">€ 730.40</p>
+              </section>
+              <div class="card__receipt-footer-info">
+                <ul class="card__receipt-footer-badges">
+                  <li>Paid</li>
+                  <li>Wise</li>
+                  <li>GBP</li>
+                </ul>
+                <img src="./assets/images/icon-barcode.svg" alt="Barcode" />
+              </div>
+            </footer>
+          </main>
+        </article>
+      </section>
+      <button class="card__hover-button">Hover to fan</button>
+    </div>
+    <section class="information-section">
+      <article class="information">
+        <header class="information__header">
+          <div>
+            <img src="./assets/images/icon-key.svg" alt="Key icon" />
+            <h2>Arrival</h2>
+          </div>
+          <p>01</p>
+        </header>
+        <main class="information__content">
+          <div>
+            <h2>Check-in from 15:00</h2>
+            <p>Sat, 25 april</p>
+          </div>
+          <p>
+            Ring the brass bell by the blue door, if we're at the market, the key is the terracotta pot by the olive tree.
+          </p>
+        </main>
+      </article>
+      <article class="information">
+        <header class="information__header">
+          <div>
+            <img src="./assets/images/icon-wifi.svg" alt="Key icon" />
+            <h2>Wifi</h2>
+          </div>
+          <p>02</p>
+        </header>
+        <main class="information__content">
+          <div>
+            <h2>Le Soleil · Guest</h2>
+            <p>Password below</p>
+          </div>
+          <div class="information__content-network">
+            <article class="information__network-property">
+              <h3>Network</h3>
+              <p>Le Soleil · Guest</p>
+            </article>
+            <article class="information__network-property">
+              <h3>Password</h3>
+              <div>
+                <p id="password">soleil-2026</p>
+                <button id="copy-button" class="information__button-password" aria-label="Button for copying the network password">Copy</button>
+              </div>
+            </article>
+          </div>
+        </main>
+      </article>
+      <article class="information">
+        <header class="information__header">
+          <div>
+            <img src="./assets/images/icon-breakfast.svg" alt="Key icon" />
+            <h2>Breakfast</h2>
+          </div>
+          <p>03</p>
+        </header>
+        <main class="information__content">
+          <div>
+            <h2>Served 8 - 10:30</h2>
+            <p>On the terrace</p>
+          </div>
+          <p>
+            Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
+          </p>
+        </main>
+      </article>
+    </section>
+  </main>
 </body>
 </html>
