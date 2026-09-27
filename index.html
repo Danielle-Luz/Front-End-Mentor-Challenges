@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./styles/menu-footer/index.css" />
   <script src="./scripts/header.js" async></script>
   <script src="./scripts/print-receipt.js" async></script>
+  <script src="./scripts/copy-password.js" async></script>
 </head>
 <body class="content-wrapper">
   <aside class="menu">
@@ -224,8 +225,8 @@
             <article class="information__network-property">
               <h3>Password</h3>
               <div>
-                <p>soleil-2026</p>
-                <button class="information__button-password" aria-label="Button for copying the network password">Copy</button>
+                <p id="password">soleil-2026</p>
+                <button id="copy-button" class="information__button-password" aria-label="Button for copying the network password">Copy</button>
               </div>
             </article>
           </div>
