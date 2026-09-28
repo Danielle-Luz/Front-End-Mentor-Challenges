@@ -1,6 +1,6 @@
 # Frontend Mentor - Hotel booking confirmation page solution
 
-This is a solution to the [Hotel booking confirmation page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/hotel-booking-confirmation-page). Frontend Mentor challenges help developers improve their coding skills by building projects. 
+This is a solution to the [Hotel booking confirmation page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/hotel-booking-confirmation-page). Frontend Mentor challenges help developers improve their coding skills by creating projects. 
 
 ## Table of contents
 
